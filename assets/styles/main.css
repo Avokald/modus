@@ -54,24 +54,48 @@ table {
           box-sizing: border-box;
 }
 
-.primary-header {
-    margin-top: 0;
-    text-align: left;
-    background-color: #3f586d;
-    vertical-align: top;
-    height: 4em;
-    text-transform: uppercase;
-    font: 300 14px/1.5em "Lato", "Open Sans", Helvetica, Arial, sans-serif;
-
+body {
+    color: rgb(116, 114, 114);
+    background: #d7e2eb;
+    font: 300 14px/22px "Open Sans", Helvetica, Arial, sans-serif;
 }
+
+
+.container {
+    min-width: 1280px;
+    height: 100vh;
+}
+
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+/*
+    ========================================
+    Header
+    ========================================
+*/    
+
+.primary-header {
+    background-color: #3f586d;
+    height: 50px;
+}
+
+.nav-list {
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
 .nav-list li {
     display: inline-block;
-    margin: 1% 3% 0 0;
+    padding: 15px;
 }
 
 .nav-list li:first-child {
-    margin-left: 5%;
-    margin-right: 35%;
+    padding-left: 70px;
+    padding-right: 500px;
 }
 
 .nav-list a {
@@ -79,29 +103,36 @@ table {
     text-decoration: none;
 }
 
+/*
+    ========================================
+    Introduction
+    ========================================
+*/
+
 .introduction {
-    background: linear-gradient(to right, #788f24, #e4ebf0);
+    background: linear-gradient(to right, #d43e7d, rgb(72, 152, 243) 70%, #d7e2eb);
+    margin: 0;
     width: 100%;
+}
+
+.intro-elements {
     text-align: center;
-    padding: 10% 0;
+    padding-top: 200px;
     color: white;
+    color: rgba(240, 239, 230, 0.95);
 }
 
 .introduction h1 {
-    font: 600 70px/1em "Helvetica Hue", Helvetica, Arial, sans-serif; 
+    font: 700 70px/70px "Open Sans", "Helvetica Hue", Helvetica, Arial, sans-serif; 
+    letter-spacing: 0.2px;
     text-transform: uppercase;   
     margin-bottom: 0;
 }
 
 .introduction p {
-    font: 400 20px/1.5em "Helvetica Hue", Helvetica, Arial, sans-serif;
+    font: 400 20px/30px  "Open Sans", "Helvetica Hue", Helvetica, Arial, sans-serif;
     margin-top: 0;
-}
-
-.introduction h1,
-.introduction p,
-.introduction button {
-    margin: 1%;
+    margin-bottom: 30px;
 }
 
 #company-name {
@@ -111,10 +142,53 @@ table {
 
 .btn {
     background-color: rgb(231, 153, 7);
-    border: 1px solid grey;
-    border-radius: 7%;
-    padding: 1%;
+    border: 0 solid grey;
+    border-radius: 5%;
     color: #FFF;
-    padding: 1% 2%;
-    font-size: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: capitalize;
 }
+
+.btn-primary {
+    margin-top: 80px;
+}
+
+
+/*
+    ========================================
+    About us
+    ========================================
+*/
+
+.about-us h2 {
+    display: block;
+    text-align: center;
+    margin-top: 125px;
+    font: 600 30px/50px "Open Sans", sans-serif;
+}
+
+.about-us hr {
+    display: block;
+    background-color:  rgb(231, 153, 7);
+    border: 0 solid red;
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.col-1-3 {
+    display: block;
+    float: left;
+    width: 27%;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: justify;
+}
+
+.about-us img {
+    width: 20%;
+    margin-left: 10%;
+}
+
