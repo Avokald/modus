@@ -63,7 +63,7 @@ body {
 
 .container {
     min-width: 1280px;
-    height: 100vh;
+    height: 765px;
 }
 
 
@@ -144,7 +144,6 @@ body {
     background-color: rgb(231, 153, 7);
     border: 0 solid grey;
     border-radius: 5%;
-    color: #FFF;
     padding: 15px 30px;
     font-size: 18px;
     text-transform: capitalize;
@@ -152,6 +151,11 @@ body {
 
 .btn-primary {
     margin-top: 80px;
+    color: #FFF;
+}
+
+.btn-primary:hover {
+    background-color: rgb(189, 97, 22);
 }
 
 
@@ -164,7 +168,7 @@ body {
 .section-title h2 {
     display: block;
     text-align: center;
-    padding-top: 125px;
+    padding-top: 80px;
     font: 700 30px/50px "Open Sans", sans-serif;
     text-transform: uppercase;
 }
@@ -236,10 +240,10 @@ body {
 .row-2 {
     margin: 0 auto;
     width: 90%;
+    text-align: center;
 }
 
 .service-description {
-    text-align: center;
     margin-bottom: 50px;
     color: whitesmoke;
 }
@@ -252,6 +256,7 @@ body {
 .service-description h3 {
     font-size: 18px;
     font-weight: 500;
+    line-height: 2.5em;
 }
 
 .col-1-4 {
@@ -269,4 +274,86 @@ body {
 .col-1-4:last-child {
     margin-right: 0;
 }
+
+/* 
+    ========================================
+    Portfolio
+    ========================================
+*/
+
+#portfolio .section-title hr{
+    margin-bottom: 30px;
+}
+
+#portfolio {
+    background-color: rgb(233, 233, 233);
+    padding-bottom: 200px;
+}
+
+.projects {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.selection button,
+.single-project {
+    display: inline-block;
+    margin: 15px;
+}
+
+.btn-project {
+    margin-top: 30px;
+    padding: 8px 17px;
+    border: 1px solid rgb(155, 154, 154);
+    border-radius: 5%;
+    background-color: inherit;
+    cursor: pointer
+}
+
+.btn-selected,
+.btn-project:hover {
+    background-color: rgb(231, 153, 7);
+    color: white;
+    border-color: rgb(231, 153, 7);
+}
+
+.btn-project:first-child,
+.single-project:first-child {
+    margin-left: 0;
+}
+
+.btn-project:last-child,
+.single-project:last-child {
+    margin-right: 0;
+}
+
+.single-project {
+    padding: 55px;
+    width: 250px;;
+    height: 170px;
+    background-color: rgb(124, 81, 0);
+    opacity: .6;
+    text-align: center;
+    
+}
+
+.project-info {
+    color: rgb(124, 81, 0);
+}
+
+.single-project:hover {
+    opacity: 1.0;
+}
+
+.single-project:hover h3 {
+    color: white;
+}
+
+.single-project:hover p {
+    color: rgb(179, 178, 178);
+}
+
+
+
+
 
