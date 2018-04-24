@@ -123,10 +123,10 @@ body {
 }
 
 .introduction h1 {
-    font: 700 70px/70px "Open Sans", "Helvetica Hue", Helvetica, Arial, sans-serif; 
+    font: 700 75px/75px "Open Sans", "Helvetica Hue", Helvetica, Arial, sans-serif; 
     letter-spacing: 0.2px;
     text-transform: uppercase;   
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .introduction p {
@@ -161,14 +161,15 @@ body {
     ========================================
 */
 
-.about-us h2 {
+.section-title h2 {
     display: block;
     text-align: center;
-    margin-top: 125px;
-    font: 600 30px/50px "Open Sans", sans-serif;
+    padding-top: 125px;
+    font: 700 30px/50px "Open Sans", sans-serif;
+    text-transform: uppercase;
 }
 
-.about-us hr {
+.section-title hr {
     display: block;
     background-color:  rgb(231, 153, 7);
     border: 0 solid red;
@@ -182,13 +183,90 @@ body {
     display: block;
     float: left;
     width: 27%;
+    height: 320px;
     margin-right: 2%;
     margin-left: 2%;
     text-align: justify;
 }
 
-.about-us img {
+.col-1-3 h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.col-1-3 p {
+    margin-bottom: 30px;
+}
+
+#about-us img {
+    background-color: orange;
+    background-image: 
+        -webkit-radial-gradient(50% 50%, 10% 10% , rgb(255, 136, 0) 10%, orange 70%, transparent),
+        -webkit-radial-gradient(30% 50%, 30% 10%, yellow 40%, transparent),
+        -webkit-radial-gradient(70% 50%, 30% 10%, red, transparent),
+        -webkit-radial-gradient(50% 70%, 10% 30%, blue, transparent),
+        -webkit-radial-gradient(50% 30%, 10% 30%, green, transparent),
+        linear-gradient(to right, #ccc, #ddd);
     width: 20%;
     margin-left: 10%;
+}
+
+.what-we-do li::before {
+    content: "✓";
+    color: orange;
+    margin-right: 10px;
+    list-style: inside;
+} 
+
+/*
+    ========================================
+    Services
+    ========================================
+*/
+
+#services h2 {
+    color: whitesmoke;
+}
+
+
+#services {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(107, 107, 107));
+}
+
+.row-2 {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.service-description {
+    text-align: center;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+.service-description img {
+    width: 50px;
+    height: 40px;
+}
+
+.service-description h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.col-1-4 {
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.col-1-4:first-child {
+    margin-left: 0;
+}
+
+.col-1-4:last-child {
+    margin-right: 0;
 }
 
